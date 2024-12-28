@@ -1,6 +1,22 @@
 errno = 50159747054
 name = 'Bob'
 
-print('Hello, {}'.format(name))
+print(f'Hello, {name}!')
 
-print('Hey {name}, there is a ox{errno:x} error!' .format(name=name, errno=errno))
+
+a = 5
+b = 10
+
+print(f'Five plus ten is {a + b} and not {2* (a + b)}.')
+
+
+
+def greet(name, question):
+    return f"Hello, {name} How's it {question}?"
+
+print(greet('Maria', 'going'))
+
+
+
+import dis
+dis.dis(greet)
